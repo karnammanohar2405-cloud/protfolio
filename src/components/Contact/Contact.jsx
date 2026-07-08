@@ -12,13 +12,13 @@ function Contact() {
             Available for focused web projects, portfolio systems, dashboards, and React interfaces that need craft and reliability.
           </p>
           <div className="contact-socials">
-            <a className="button" href="mailto:karnammanohar@example.com">
+            <a className="button" href="mailto:karnammanohar2405@gmail.com">
               <Mail size={17} /> Email
             </a>
-            <a className="button" href="https://github.com/Manohar2405" target="_blank" rel="noreferrer">
+            <a className="button" href="https://github.com/karnammanohar2405-cloud" target="_blank" rel="noreferrer">
               <Github size={17} /> GitHub
             </a>
-            <a className="button" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <a className="button" href="https://www.linkedin.com/in/manohar-karnam-b86639362" target="_blank" rel="noreferrer">
               <Linkedin size={17} /> LinkedIn
             </a>
           </div>
