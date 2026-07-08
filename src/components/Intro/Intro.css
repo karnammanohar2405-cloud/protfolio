@@ -170,3 +170,113 @@
     letter-spacing: 0.22em;
   }
 }
+/* ========================= */
+/* Tablet (1024px) */
+/* ========================= */
+
+@media (max-width:1024px){
+
+    .circle{
+        width:700px;
+        height:700px;
+    }
+
+    .mainTitle{
+        font-size:42px;
+        letter-spacing:5px;
+    }
+
+    .portfolioTitle{
+        font-size:15px;
+        letter-spacing:7px;
+    }
+
+    .leftLine,
+    .rightLine{
+        width:120px !important;
+    }
+
+    .mountains{
+        bottom:-25%;
+    }
+
+}
+
+/* ========================= */
+/* Mobile (768px) */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .circle{
+        width:450px;
+        height:450px;
+    }
+
+    .introText{
+        top:40%;
+    }
+
+    .mainTitle{
+        font-size:30px;
+        letter-spacing:3px;
+    }
+
+    .portfolioTitle{
+        font-size:12px;
+        letter-spacing:5px;
+    }
+
+    .leftLine,
+    .rightLine{
+        display:none;
+    }
+
+    .mountains{
+        width:180%;
+        bottom:-18%;
+    }
+
+}
+
+/* ========================= */
+/* Small Phones (480px) */
+/* ========================= */
+
+@media (max-width:480px){
+
+    .circle{
+        width:320px;
+        height:320px;
+    }
+
+    .introText{
+        top:42%;
+    }
+
+    .mainTitle{
+        font-size:22px;
+        letter-spacing:2px;
+    }
+
+    .portfolioTitle{
+        font-size:10px;
+        letter-spacing:3px;
+    }
+
+    .mountains{
+        width:230%;
+        bottom:-10%;
+    }
+
+    .horizonGlow{
+        width:700px;
+        height:300px;
+    }
+
+    .star{
+        width:1.5px;
+        height:1.5px;
+    }
+
+}
