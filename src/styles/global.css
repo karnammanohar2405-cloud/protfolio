@@ -1,0 +1,140 @@
+:root {
+  color-scheme: dark;
+  --bg: #02060d;
+  --bg-soft: #06111d;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.68);
+  --quiet: rgba(255, 255, 255, 0.46);
+  --line: rgba(255, 255, 255, 0.12);
+  --glass: rgba(7, 16, 28, 0.58);
+  --blue: #52adff;
+  --blue-strong: #0c7cff;
+  --cyan: #8ff4ff;
+  --radius: 8px;
+  --max: min(1440px, calc(100vw - 48px));
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(30, 130, 255, 0.2), transparent 34rem),
+    var(--bg);
+}
+
+body::selection {
+  background: rgba(82, 173, 255, 0.45);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  position: relative;
+  padding: clamp(88px, 11vw, 170px) 0;
+  overflow: hidden;
+}
+
+.section-inner {
+  width: var(--max);
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  margin: 0 0 18px;
+  color: var(--cyan);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0;
+  max-width: 850px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2.35rem, 6vw, 6rem);
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.section-copy {
+  max-width: 670px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.glass {
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035));
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(22px);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.07);
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(143, 244, 255, 0.55);
+  background: rgba(82, 173, 255, 0.16);
+}
+
+.section-loader {
+  min-height: 40vh;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --max: min(100vw - 32px, 1440px);
+  }
+
+  .section {
+    padding: 78px 0;
+  }
+}
