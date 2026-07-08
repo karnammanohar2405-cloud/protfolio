@@ -1,282 +1,174 @@
-.intro {
-  position: relative;
-  z-index: 10;
-  min-height: 100vh;
-  overflow: hidden;
-  background: #02060d;
-}
-
-.intro-stage {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  transform-origin: 50% 38%;
-}
-
-.intro-stars {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.16), transparent 1px),
-    radial-gradient(circle at 70% 12%, rgba(143, 244, 255, 0.18), transparent 1px);
-}
-
-.intro-star {
-  position: absolute;
-  border-radius: 999px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(143, 244, 255, 0.9);
-  animation: twinkle 3.8s ease-in-out infinite;
-}
-
-.intro-glow {
-  position: absolute;
-  left: 50%;
-  bottom: 16%;
-  width: min(980px, 92vw);
-  height: 150px;
-  border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgba(82, 173, 255, 0.7), rgba(12, 124, 255, 0.18) 48%, transparent 72%);
-  filter: blur(22px);
-  transform: translateX(-50%);
-}
-
-.intro-mountains {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: min(38vh, 360px);
-  fill: rgba(1, 4, 9, 0.96);
-  filter: drop-shadow(0 -22px 42px rgba(82, 173, 255, 0.18));
-}
-
-.intro-mountains path:first-child {
-  fill: rgba(4, 11, 22, 0.88);
-}
-
-.intro-circle {
-  position: absolute;
-  width: 800px;
-  aspect-ratio: 1;
-  opacity: 0.92;
-}
-
-.intro-circle svg {
-  width: 100%;
-  height: 100%;
-  transform: rotate(-88deg);
-}
-
-.intro-circle-path {
-  fill: none;
-  stroke: rgba(190, 232, 255, 0.86);
-  stroke-width: 2.2;
-  filter: drop-shadow(0 0 18px rgba(82, 173, 255, 0.55));
-}
-
-.intro-lines {
-  position: absolute;
-  width:200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: clamp(220px, 33vw, 460px);
-}
-
-.intro-line {
-  height: 1px;
-  flex: 1;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.78), transparent);
-  transform-origin: center;
-}
-
-.intro-title-wrap {
-  position: center;
-  z-index: 2;
-  text-align: center;
-  transform-origin: center;
-  will-change: transform;
-  
- }
-
-.intro-kicker {
-  margin: 0 0 20px;
-  color: rgba(143, 244, 255, 0.9);
-  font-family: 'Montserrat', sans-serif;
-  font-size: clamp(0.7rem, 1.2vw, 1rem);
-  font-weight: 1000px;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-}
-
-.intro-name {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 0.84;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  
-}
-
-.intro-name-inner {
-  position: relative;
-  display: inline-flex;
-  overflow: hidden;
-  padding: 0 0.05em 0.12em;
-  color: #fff;
-  text-shadow: 0 0 28px rgba(82, 173, 255, 0.28);
-}
-
-.intro-letter {
-  display: inline-block;
-  transform-origin: center bottom;
-  will-change: transform, opacity;
-}
-
-.intro-shine {
-  position: absolute;
-  inset: -20% auto -20% 0;
-  width:30%;
-  transform: skewX(-22deg);
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.88), rgba(143, 244, 255, 0.72), transparent);
-  mix-blend-mode: screen;
-  filter: blur(3px);
-}
-
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 0.25;
-    transform: scale(0.75);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.25);
-  }
-}
-
-@media (max-width: 760px) {
-  .intro-lines {
-    gap: 130px;
-    width: 94vw;
-  }
-
-  .intro-kicker {
-    margin-bottom: 14px;
-    letter-spacing: 0.22em;
-  }
-}
 /* ========================= */
-/* Tablet (1024px) */
+/* Laptop */
 /* ========================= */
 
-@media (max-width:1024px){
+@media (max-width: 1024px){
 
-    .circle{
-        width:700px;
-        height:700px;
-    }
+  .intro-circle{
+    width:650px;
+  }
 
-    .mainTitle{
-        font-size:42px;
-        letter-spacing:5px;
-    }
+  .intro-name{
+    font-size:56px;
+  }
 
-    .portfolioTitle{
-        font-size:15px;
-        letter-spacing:7px;
-    }
+  .intro-kicker{
+    font-size:14px;
+    letter-spacing:.28em;
+  }
 
-    .leftLine,
-    .rightLine{
-        width:120px !important;
-    }
+  .intro-lines{
+    width:180px;
+    gap:220px;
+  }
 
-    .mountains{
-        bottom:-25%;
-    }
+  .intro-mountains{
+    height:300px;
+  }
 
 }
 
 /* ========================= */
-/* Mobile (768px) */
+/* Tablet */
 /* ========================= */
 
 @media (max-width:768px){
 
-    .circle{
-        width:450px;
-        height:450px;
-    }
+  .intro-circle{
+    width:460px;
+  }
 
-    .introText{
-        top:40%;
-    }
+  .intro-title-wrap{
+    width:90%;
+  }
 
-    .mainTitle{
-        font-size:30px;
-        letter-spacing:3px;
-    }
+  .intro-name{
+    font-size:42px;
+    line-height:1;
+  }
 
-    .portfolioTitle{
-        font-size:12px;
-        letter-spacing:5px;
-    }
+  .intro-kicker{
+    font-size:12px;
+    letter-spacing:.22em;
+    margin-bottom:16px;
+  }
 
-    .leftLine,
-    .rightLine{
-        display:none;
-    }
+  .intro-lines{
+    width:130px;
+    gap:120px;
+  }
 
-    .mountains{
-        width:180%;
-        bottom:-18%;
-    }
+  .intro-mountains{
+    height:240px;
+  }
+
+  .intro-glow{
+    width:90vw;
+    height:120px;
+  }
 
 }
 
 /* ========================= */
-/* Small Phones (480px) */
+/* Mobile */
 /* ========================= */
 
 @media (max-width:480px){
 
-    .circle{
-        width:320px;
-        height:320px;
-    }
+  .intro-stage{
+    transform-origin:center;
+  }
 
-    .introText{
-        top:42%;
-    }
+  .intro-circle{
+    width:310px;
+  }
 
-    .mainTitle{
-        font-size:22px;
-        letter-spacing:2px;
-    }
+  .intro-title-wrap{
+    width:92%;
+    padding:0 18px;
+  }
 
-    .portfolioTitle{
-        font-size:10px;
-        letter-spacing:3px;
-    }
+  .intro-name{
 
-    .mountains{
-        width:230%;
-        bottom:-10%;
-    }
+    font-size:30px;
 
-    .horizonGlow{
-        width:700px;
-        height:300px;
-    }
+    line-height:1.05;
 
-    .star{
-        width:1.5px;
-        height:1.5px;
-    }
+    letter-spacing:1px;
+
+  }
+
+  .intro-kicker{
+
+    font-size:10px;
+
+    letter-spacing:.18em;
+
+    margin-bottom:12px;
+
+  }
+
+  .intro-lines{
+
+    width:90px;
+
+    gap:60px;
+
+  }
+
+  .intro-glow{
+
+    width:95vw;
+
+    height:90px;
+
+    bottom:18%;
+
+  }
+
+  .intro-mountains{
+
+    height:180px;
+
+  }
+
+  .intro-circle-path{
+
+    stroke-width:1.4;
+
+  }
+
+}
+
+/* ========================= */
+/* Small Phones */
+/* ========================= */
+
+@media (max-width:360px){
+
+  .intro-circle{
+    width:260px;
+  }
+
+  .intro-name{
+    font-size:24px;
+  }
+
+  .intro-kicker{
+    font-size:9px;
+    letter-spacing:.15em;
+  }
+
+  .intro-lines{
+    display:none;
+  }
+
+  .intro-glow{
+    height:70px;
+  }
+
+  .intro-mountains{
+    height:150px;
+  }
 
 }
