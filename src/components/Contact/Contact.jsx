@@ -22,7 +22,7 @@ ${message}
 Sent from your Portfolio Website.`;
 
     // Replace with your WhatsApp number
-    const phoneNumber = "8317538503";
+    const phoneNumber = "+918317538503";
 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       whatsappMessage
