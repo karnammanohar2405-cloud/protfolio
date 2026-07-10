@@ -207,6 +207,9 @@
 /* ========================= */
 
 @media (max-width:768px){
+    .intro-name{
+        font-size: 10px;
+    }
 
     .circle{
         width:450px;
@@ -223,7 +226,7 @@
     }
 
     .portfolioTitle{
-        font-size:12px;
+        font-size:5px;
         letter-spacing:5px;
     }
 
@@ -244,7 +247,9 @@
 /* ========================= */
 
 @media (max-width:480px){
-
+    .intro-name{
+        font-size: 8px;
+    } 
     .circle{
         width:220px;
         height:220px;
@@ -255,12 +260,12 @@
     }
 
     .mainTitle{
-        font-size:10px;
+        font-size:5px;
         letter-spacing:2px;
     }
 
     .portfolioTitle{
-        font-size:10px;
+        font-size:5px;
         letter-spacing:3px;
     }
 
