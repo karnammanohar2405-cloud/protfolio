@@ -208,7 +208,7 @@
 
 @media (max-width:768px){
     .intro-name{
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .circle{
@@ -248,7 +248,7 @@
 
 @media (max-width:480px){
     .intro-name{
-        font-size: 8px;
+        font-size: 10px;
     } 
     .circle{
         width:220px;
